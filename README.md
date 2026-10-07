@@ -16,6 +16,7 @@ scripts/07-global-rules.sh     # safety rules for every Claude session
 scripts/06-install-health-check.sh   # optional
 ```
 Day to day: `scripts/status.sh` (is it healthy?) and `scripts/restart.sh`.
+The Test lock starts ON (sends only to yourself). When you are happy with the test message, run `scripts/test-lock.sh off`; Claude still asks you before every send.
 If you get logged out: see **Troubleshooting** in `CLAUDE.md`.
 
 **Your private data lives in `whatsapp-bridge/store/` and is never committed** (see `.gitignore`). Keep this repository private.

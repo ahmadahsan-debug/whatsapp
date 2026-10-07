@@ -40,6 +40,7 @@ scripts/02-build.sh             # go build -> whatsapp-bridge/bin/whatsapp-bridg
 scripts/03-first-run.sh         # Test lock ON, run in foreground, scan QR (Settings > Linked devices > Link a device)
 scripts/04-register-mcp.sh      # claude mcp add whatsapp --scope user ... ; then restart Claude Code
 scripts/05-install-service.sh   # launchd/systemd: start at login, restart on crash
+scripts/test-lock.sh on|off|status  # switch the Test lock (the user turns it OFF after Phase 1 testing; keep ON when testing)
 scripts/restart.sh              # restart after rebuilding
 scripts/status.sh               # health + last log lines
 scripts/06-install-health-check.sh  # optional: 09:00/18:00 notification only when down/logged out
